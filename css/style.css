@@ -1,0 +1,515 @@
+/*Estilos gerais*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.btn{
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color:#fec63e ;
+    text-transform: uppercase;
+    letter-spacing: .1em;   /* espaçamento entre as letras */
+    font-weight: bold;
+}
+
+
+.btn:hover{                 /* mudança de cores do botão*/
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.btn-preto:hover{                 /* mudança de cores do botão*/
+    color: #000;
+    border-color: #000;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+
+}
+
+
+.call{
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+
+.call p{
+    padding-bottom: 20px;    
+}
+
+
+
+/*header*/
+
+
+
+.header{
+    position: fixed;         /*fixar barra*/
+    top:0;                   /*fixar barra no top da bagina*/
+    width: 100%;   
+    padding: 15px;
+    background: #fec63e;     /* cor amarelo */
+    z-index: 10;              /* quando uma farra fixa fica por baixo usa o z-index para o fixo ficar por cima*/
+
+}
+
+
+.header_menu ul li a.menu_ativo {/* fixar cor na aba selecionada*/
+    color: #fff;
+}
+
+
+.header_menu{
+    text-align: right;        /* alinhar texto a direita */
+    margin-top: 20px;         /* margem a cima para baixar um poco o menu*/
+}
+
+
+.header_menu ul li {
+    display: inline;          /* necessario para tirar itens um de cima do na lista */
+    margin-left: 25px;        /* margem a esquerda */
+
+}
+
+
+.header_menu ul li a {
+    color: #000;
+    font-weight: bold;         /* negrito*/
+    text-transform: uppercase; /* tranfomar em maiusculo */
+    letter-spacing: .1em;      /* espaçamento entre as letras */
+    font-size: 14px;           /* tamanho da letra */
+    line-height: 20px;         /* altura das linhas */
+    padding: 10px 0;           /* almento da area de contato do link em cima e em baixo*/
+    
+}
+
+
+
+.header_menu ul li a:hover{
+    color: white;
+}
+
+
+
+/*introdução*/
+
+
+
+.introducao{
+    width: 100%;
+    height: 380px;    
+    background-image: url("../img/bg-intro.jpg") ;
+    background-size: cover;    
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+
+.introducao h1{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;    
+    
+}
+
+
+.quote-externo{
+    max-width: 320px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 40px;        /* afastar conteudo que estar em baixo do quote-externo */
+    overflow: auto;
+}
+
+
+.quote-externo p{
+    font-style: italic;          /*ESTILO DA FONTE*/ 
+}
+
+
+
+.quote-externo p:before,.quote-externo p:after{/* criar detalhes" cetas,traços,quadrados,etc.."*/ 
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #fff;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin: 14px auto 10px auto; /* alinhar elemento ao centro*/
+}
+
+
+.quote-externo cite{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    
+}
+
+
+.introducao_interna{
+ width: 100%;
+ margin-top:92px;
+ height: 160px; 
+ background-size: cover;
+ text-align: center;
+ color: #fff;
+ padding-top: 30px;
+}
+
+
+
+.introducao_interna h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+
+.introducao_interna h1:after{
+        content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+        display: block;              /* transformar o elemento em bloco*/
+        width: 60px;                 /* largura do elemento*/
+        height: 3px;                 /* altura do elemento*/
+        background: #fff;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+         margin: 6px auto 10px auto;/* alinhar elemento ao centro*/
+}
+
+
+/* produtos*/
+
+
+
+
+.produtos{
+    margin: 60px;
+}
+
+
+
+.produtos_lista li{
+    background:#fec63e;
+    padding:10px ;    
+}
+
+
+
+.produtos_lista{
+    text-align: center; 
+    
+}
+
+
+
+.produtos_icone {
+    background: #000;
+    padding: 20px 0;    
+}
+
+
+
+.produtos_icone img {
+    margin: 0 auto;    
+}
+
+
+
+.produtos_lista li h3{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:#000;
+    text-transform: uppercase;  
+    margin-top: 20px;
+}
+
+
+
+.produtos_lista h3:after{
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #000;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin:2px auto ; /* alinhar elemento ao centro*/
+}
+
+
+
+.produtos_lista li p{
+    padding: 10px 20px 20px 20px ;
+}
+
+
+
+.subtitulo{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:#000;
+    text-transform: uppercase;     
+    margin: 40px;
+}
+
+
+
+.subtitulo:after{
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #000;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin:8px auto ;            /* alinhar elemento ao centro*/
+
+}
+
+
+.subtitulo_interno{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:#000;
+    text-transform: uppercase;     
+    margin-bottom: 20px;
+}
+
+
+
+.subtitulo_interno:after{
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #000;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin:8px 0 ;            /* alinhar elemento ao centro*/
+
+}
+
+
+
+/*portfolio*/
+
+
+
+.portfolio{
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+
+
+.portfolio .subtitulo {
+    color: #fec63e;
+}
+
+
+
+.portfolio .subtitulo:after{
+    background: #fec63e;
+}
+
+
+
+.portfolio .call p{
+    color: #fff;
+}
+
+
+
+.portfolio_lista li:last-child{         /*seleciona o ultimo elemento dentro da lista*/
+    margin-top: 20px;
+}
+
+
+/* Qualidade */
+
+
+
+.qualidade{
+    padding: 60px 0;
+    overflow: auto;                     /* clier fix: limpa a flutuação de elementos flutuantes que estão sobrepostos*/
+}
+
+
+.qualidade img{
+    margin: 0 auto;
+}
+
+
+.qualidade_lista li{
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+.qualidade_lista li h3{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color:#000;
+    text-transform: uppercase;  
+    margin-top: 20px;
+}
+
+
+
+.qualidade::after{
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg")no-repeat center;
+    position: absolute;          /*posição relativa ao bloco qualidade*/ 
+    top: 247px;                  /* top e right necessario para ajustar imagem*/
+    right: 162px;
+    z-index: -1;
+}
+
+
+
+.qualidade_lista h3:after{
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #000;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin:2px auto ; /* alinhar elemento ao centro*/
+}
+
+
+
+.qualidade_lista li p{
+    padding: 6px ;
+}
+
+
+/* Quebra*/
+
+.quebra{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg")no-repeat center;
+    background-size: cover;
+    text-align: center;
+    overflow: auto;
+}
+
+
+.quebra .quote-externo{
+    max-width: 400px;
+}
+
+
+.quebra p{
+    padding-top: 40px;
+}
+
+
+/* footer*/
+
+
+.footer{
+    width: 100%;
+    background: #000;
+    height: 150px;
+    color: #fff;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+
+.footer h3{
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    color: #fec63e;
+}
+
+
+
+.footer h3::after{
+    content: "";                 /* tem que ter o content,mesmo que sem nada dentro*/
+    display: block;              /* transformar o elemento em bloco*/
+    width: 60px;                 /* largura do elemento*/
+    height: 3px;                 /* altura do elemento*/
+    background: #fec63e;          /* obs: se esquecer da cor o elemento não vai aparecer*/
+    margin: 4px 0 12px 0; /* alinhar elemento ao centro*/
+}
+
+
+
+.footer_historia{
+    padding-right: 40px;
+}
+
+
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.footer_redes_sociais ul li{
+    display: inline-block;   
+    margin-right: 10px; 
+}
+
+
+
+.footer_redes_sociais ul li a{
+    color: #fec63e;
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 10px;
+}
+
+
+
+.footer_redes_sociais ul li a:hover {
+    color: #fff;
+    border-color:#fff;
+}
+
+
+
+.copy{
+    width: 100%;
+    background: #fec63e;
+    padding: 20px 0 30px 0;
+ }
+
+ /*sobre*/
+
+ 
